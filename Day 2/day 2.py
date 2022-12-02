@@ -1,23 +1,36 @@
 
-with open("data/input2") as f:
+with open("data/input") as f:
     data = f.readlines()
 
 points = {
-    "A": 1, "X": 1, # rock
-    "B": 2, "Y": 2, # paper
-    "C": 3, "Z": 3, # scissors
+    "A": 1, "R": 1, # rock
+    "B": 2, "P": 2, # paper
+    "C": 3, "S": 3, # scissors
 }
 
 rules = {
-    "AX": "D", # rock beats scissors
+    "AR": "D", # rock beats scissors
     "AY": "W", # rock beats paper
     "AZ": "L", # rock loses to paper
-    "BX": "L", # paper loses to rock
+    "BR": "L", # paper loses to rock
     "BY": "D", # paper beats rock
     "BZ": "W", # etc
-    "CX": "W",
+    "CR": "W",
     "CY": "L",
     "CZ": "D",
+}
+
+# built with copilot
+strattable = {
+    "AW": "P",  # play paper to beat rock
+    "AD": "R",  # play rock to draw rock
+    "AL": "S",  # play scissors to lose to rock
+    "BW": "S",  # play scissors to beat paper
+    "BD": "P",  # etc
+    "BL": "R",
+    "CW": "R",
+    "CD": "S",
+    "CL": "P",
 }
 
 outcomes = {
@@ -33,9 +46,9 @@ for row in data:
     else:
         plays = row.split()
         opponentsplay = plays[0]
-        myplay = plays[1]
-        outcome = rules[opponentsplay+myplay]
-        sum += outcomes[outcome]
+        instr = {"X": "L", "Y": "D", "Z": "W"}[plays[1]]
+        myplay = strattable[opponentsplay+instr]
+        sum += outcomes[instr]
         sum += points[myplay]
 
 print(sum)
