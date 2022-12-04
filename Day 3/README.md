@@ -1,4 +1,4 @@
-# Reflections
+# Day 3 Reflections
 
 Pretty easy, just working with strings as arrays of characters.
 
