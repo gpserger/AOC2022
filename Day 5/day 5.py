@@ -51,7 +51,6 @@ def get_stacks_and_instructions(data):
 def print_part1(data):
     print("part 1: ", end="")
     stacks, instructions = get_stacks_and_instructions(data)
-    # print()
     for instr in instructions:
         count, fromStack, toStack = instr
         for i in range(count):
@@ -62,6 +61,15 @@ def print_part1(data):
 
 def print_part2(data):
     print("part 2: ", end="")
+    stacks, instructions = get_stacks_and_instructions(data)
+    for instr in instructions:
+        count, fromStack, toStack = instr
+        fromStack -= 1
+        toStack -= 1
+        cratesToMove = [stacks[fromStack].get() for i in range(count)]
+        for crate in reversed(cratesToMove):
+            stacks[toStack].put(crate)
+    print(''.join([stack.get() for stack in stacks]))
     pass
 
 if __name__ == "__main__":

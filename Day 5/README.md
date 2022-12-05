@@ -8,3 +8,6 @@ Then I switched to traversing the string in 4-character wide sections and that w
 To represent the ship's cargo I used queue.LiFoQueue, as stacks.
 
 ## Part 2
+
+Easy peasy.
+Just get the number of crates to move at once, store them in a list, and put them back down in reverse order.
