@@ -10,7 +10,7 @@ I'll be using vanilla python 3 for this. I'm doing this for fun so don't expect 
 | 3  | <ul><li>- [x] Part 1 </li><li>- [x] Part 2</li></ul> |
 | 4  | <ul><li>- [x] Part 1 </li><li>- [x] Part 2</li></ul> |
 | 5  | <ul><li>- [x] Part 1 </li><li>- [x] Part 2</li></ul> |
-| 6  | <ul><li>- [ ] Part 1 </li><li>- [ ] Part 2</li></ul> |
+| 6  | <ul><li>- [x] Part 1 </li><li>- [x] Part 2</li></ul> |
 | 7  | <ul><li>- [ ] Part 1 </li><li>- [ ] Part 2</li></ul> |
 | 8  | <ul><li>- [ ] Part 1 </li><li>- [ ] Part 2</li></ul> |
 | 9  | <ul><li>- [ ] Part 1 </li><li>- [ ] Part 2</li></ul> |
