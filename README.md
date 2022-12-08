@@ -3,8 +3,8 @@
 I'll be using vanilla python 3 for this. I'm doing this for fun so don't expect and super clean code or documentation.
 
 ## Checklist
-| Day | Status |
-| --- | --- |
+| Day | Status                                               |
+| --- |------------------------------------------------------|
 | 1  | <ul><li>- [x] Part 1 </li><li>- [x] Part 2</li></ul> |
 | 2  | <ul><li>- [x] Part 1 </li><li>- [x] Part 2</li></ul> |
 | 3  | <ul><li>- [x] Part 1 </li><li>- [x] Part 2</li></ul> |
@@ -12,7 +12,7 @@ I'll be using vanilla python 3 for this. I'm doing this for fun so don't expect 
 | 5  | <ul><li>- [x] Part 1 </li><li>- [x] Part 2</li></ul> |
 | 6  | <ul><li>- [x] Part 1 </li><li>- [x] Part 2</li></ul> |
 | 7  | <ul><li>- [x] Part 1 </li><li>- [x] Part 2</li></ul> |
-| 8  | <ul><li>- [ ] Part 1 </li><li>- [ ] Part 2</li></ul> |
+| 8  | <ul><li>- [x] Part 1 </li><li>- [x] Part 2</li></ul> |
 | 9  | <ul><li>- [ ] Part 1 </li><li>- [ ] Part 2</li></ul> |
 | 10 | <ul><li>- [ ] Part 1 </li><li>- [ ] Part 2</li></ul> |
 | 11 | <ul><li>- [ ] Part 1 </li><li>- [ ] Part 2</li></ul> |
