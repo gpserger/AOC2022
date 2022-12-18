@@ -15,7 +15,7 @@ I'll be using vanilla python 3 for this. I'm doing this for fun so don't expect 
 | 8  | <ul><li>- [x] Part 1 </li><li>- [x] Part 2</li></ul> |
 | 9  | <ul><li>- [x] Part 1 </li><li>- [x] Part 2</li></ul> |
 | 10 | <ul><li>- [x] Part 1 </li><li>- [x] Part 2</li></ul> |
-| 11 | <ul><li>- [ ] Part 1 </li><li>- [ ] Part 2</li></ul> |
+| 11 | <ul><li>- [x] Part 1 </li><li>- [x] Part 2</li></ul> |
 | 12 | <ul><li>- [ ] Part 1 </li><li>- [ ] Part 2</li></ul> |
 | 13 | <ul><li>- [ ] Part 1 </li><li>- [ ] Part 2</li></ul> |
 | 14 | <ul><li>- [ ] Part 1 </li><li>- [ ] Part 2</li></ul> |
