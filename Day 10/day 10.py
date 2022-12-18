@@ -32,14 +32,19 @@ def print_part1(data):
     print("part 1: ", end="")
     x = 1
     xhistory = [x]
+
+    def cycle(x):
+        nonlocal xhistory
+        xhistory.append(x)
+
     for instr in data:
         if instr == 'noop':
-            xhistory.append(x)
+            cycle(x)
         elif instr.split()[0] == 'addx':
+            cycle(x)
             instr, arg = instr.split(' ')
-            xhistory.append(x)
             x += int(arg)
-            xhistory.append(x)
+            cycle(x)
 
     tosum = [20, 60, 100, 140, 180, 220]
     sum = 0
@@ -60,11 +65,13 @@ def print_part2(data):
 
 
     x = 1
-    xhistory = [x]
+    xhistory = []
 
     def cycle(x):
         nonlocal row
         nonlocal rows
+        nonlocal xhistory
+
         nCycle = len(xhistory) % rowwidth
         if nCycle == 0:
             rows.append(row)
@@ -74,19 +81,18 @@ def print_part2(data):
             row += spritechar
         else:
             row += offchar
+        xhistory.append(x)
 
-
+    cycle(x)
     for instr in data:
         if instr == 'noop':
-            xhistory.append(x)
             cycle(x)
         elif instr.split()[0] == 'addx':
+            cycle(x)
             instr, arg = instr.split(' ')
-            xhistory.append(x)
-            cycle(x)
-            xhistory.append(x)
-            cycle(x)
             x += int(arg)
+            cycle(x)
+
 
     [print(row) for row in rows]
 
