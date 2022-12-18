@@ -2,7 +2,7 @@ import os
 
 # set working dir to parent
 os.chdir('..')
-for day in range(5, 6):
+for day in range(11, 18):
     # Create directory named Day {day} with subdir data
     os.mkdir(f"Day {day}")
     os.mkdir(f"Day {day}/data")
